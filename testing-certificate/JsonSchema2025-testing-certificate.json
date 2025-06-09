@@ -1,0 +1,39 @@
+{
+  "name": "Testing certificate",
+  "description": "Simple representation of a testing certificate.",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Brafit2001/DiD_testing/blob/main/testing-certificate/JsonSchema2025-testing-certificate.json",
+  "type": "object",
+  "properties": {
+    "credentialSubject": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "title": "Credential subject id",
+          "type": "string",
+          "description": "Credential subject identifier"
+        },
+        "attributes": {
+          "title": "Attributes",
+          "description": "Credential attributes",
+          "type": "object",
+          "properties": {
+            "Prueba": {
+              "title": "Prueba",
+              "type": "string",
+              "description": "Esto es un atributo de prueba"
+            }
+          },
+          "required": []
+        }
+      },
+      "required": [
+        "id",
+        "attributes"
+      ]
+    }
+  },
+  "required": [
+    "credentialSubject"
+  ]
+}
